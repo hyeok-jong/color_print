@@ -1,4 +1,5 @@
 Works well on both jupyter and terminal.  
+reference : [stackoverflow](https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal)
 
 
 
