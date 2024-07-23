@@ -38,3 +38,4 @@ def color_print(text, color='red', bg_color=None, bold=False, underline=False):
         text = color_dict[color.lower()] + text
     if bg_color:
         text = bg_color_dict[bg_color.lower()] + text
+    print(text + ENDC)
