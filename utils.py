@@ -1,4 +1,4 @@
-def color_print(text, color='red', bg_color=None, bold=False, underline=False, strikethrough=False):\
+def color_print(text, color='red', bg_color=None, bold=False, underline=False):
     # make all types to string.
     text = f'{text}'
     color_dict = {
@@ -34,13 +34,7 @@ def color_print(text, color='red', bg_color=None, bold=False, underline=False, s
         text = BOLD + text
     if underline:
         text = UNDERLINE + text
-    if strikethrough:
-        text = STRIKETHROUGH + text
     if color:
         text = color_dict[color.lower()] + text
     if bg_color:
         text = bg_color_dict[bg_color.lower()] + text
-
-    print(text + ENDC)
-
-
