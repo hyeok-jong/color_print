@@ -1,4 +1,7 @@
-def color_print(text, color='red', bg_color=None, bold=False, underline=False):
+
+# https://stackoverflow.com/questions/287871/how-do-i-print-colored-text-to-the-terminal
+
+def color_print(text, color='red', bg_color=None, bold=False, underline=False, end = None):
     # make all types to string.
     text = f'{text}'
     color_dict = {
@@ -38,4 +41,4 @@ def color_print(text, color='red', bg_color=None, bold=False, underline=False):
         text = color_dict[color.lower()] + text
     if bg_color:
         text = bg_color_dict[bg_color.lower()] + text
-    print(text + ENDC)
+    print(text + ENDC, end = end)
